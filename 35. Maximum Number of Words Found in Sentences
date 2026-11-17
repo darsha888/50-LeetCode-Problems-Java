@@ -1,0 +1,17 @@
+import java.util.*;
+
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        int max = 0;
+
+        for (String sentence : sentences) {
+            int count = sentence.trim().split("\\s+").length;
+
+            if (count > max) {
+                max = count;
+            }
+        }
+
+        return max;
+    }
+}
