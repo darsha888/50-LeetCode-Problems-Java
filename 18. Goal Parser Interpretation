@@ -1,0 +1,13 @@
+
+import java.util.*;
+
+class Solution {
+    public String interpret(String command) {
+        String result = "";
+
+        result = command.replace("()", "o");
+        result = result.replace("(al)", "al");
+
+        return result;
+    }
+}
